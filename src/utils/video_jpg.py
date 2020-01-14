@@ -56,4 +56,5 @@ if __name__ == "__main__":
             print(cmd)
             subprocess.call(cmd, shell=True)
             print('\n')
-            break
+            if video_label == 'real':
+                break
