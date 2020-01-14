@@ -11,3 +11,8 @@ on kaggle notebook
 ```
 !tar xvf ../input/ffmpeg-static-build/ffmpeg-git-amd64-static.tar.xz
 ```
+
+on mac
+```shell script
+brew install ffmpeg
+```
