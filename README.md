@@ -16,3 +16,17 @@ on mac
 ```shell script
 brew install ffmpeg
 ```
+
+
+## Directory 
+```
+.
+└── data
+    └── jpg_video_directory
+        ├── fake
+        │   └── (video names)
+        │       ├── (jgp files)
+        └── real
+            └── (video names)
+                ├── (jgp files)
+```
