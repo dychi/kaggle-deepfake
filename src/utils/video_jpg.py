@@ -18,13 +18,14 @@ if __name__ == "__main__":
 
     for dirname, _, filenames in os.walk(dir_path):
         for filename in filenames:
+            if ".mp4" not in filename:
+                 continue
             print("Video File Name:", filename)
             # 動画のラベル
             video_label = metadata_df.loc[filename]['label'].lower()
             # 動画ラベルのディレクトリパス
             video_label_path = os.path.join(dst_dir_path, video_label)
-            if ".mp4" not in filename:
-                continue
+
             name, ext = os.path.splitext(filename)
             # 動画ごとの書き出し先ディレクトリ
             dst_video_dir_path = os.path.join(video_label_path, name)

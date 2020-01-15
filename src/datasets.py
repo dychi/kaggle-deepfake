@@ -5,6 +5,7 @@ from torch.utils.data import Dataset
 
 
 def make_dataset():
+    # videp_path = "data/jpg_video_directory"
     pass
 
 
@@ -13,7 +14,9 @@ def detect_face():
 
 
 class DFDCDataset(Dataset):
-    def __init__(self, data_path):
+    def __init__(self,
+                 data_path,
+                 sample_duration=16):
         self.data_path = data_path
         # データの取得
         self.data = make_dataset()

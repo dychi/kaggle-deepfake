@@ -17,6 +17,10 @@ on mac
 brew install ffmpeg
 ```
 
+## 動画の書き出し
+```
+python src/utils/video_jpg.py data/raw/dfdf_train_part_1 data/jpg_video_directory
+```
 
 ## Directory 
 ```
@@ -30,3 +34,4 @@ brew install ffmpeg
             └── (video names)
                 ├── (jgp files)
 ```
+
